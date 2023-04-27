@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>textboxes</title>
+     <script>
+          //from textboxes
+          function sayHi () {
+               var txtName = document.getElementById ("txtName");
+               var txtOutput = document.getElementById ("txtOutput");
+               var name = txtName.value;
+               txtOutput.value = "Hi there, " + name + "!";
+          }
+     </script>
+</head>
+<body>
+     <h1>Text Box Input and Output</h1>
+     <form action="">
+          <fieldset>
+               <label for="">Type your name:</label>
+               <input type="text" id="txtName"/>
+               <input type="button" value="Click Me" onclick="sayHi ()"/>
+               <input type="text" id="txtOutput"/>
+          </fieldset>
+     </form>
+</body>
+</html>

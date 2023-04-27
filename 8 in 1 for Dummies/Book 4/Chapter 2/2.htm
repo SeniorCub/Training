@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>BackgroundColors</title>
+     <script>
+          // Page 381
+          function makeBlack () {
+               document.body.style.backgroundColor = "#0f0f0f";
+          }
+          function makeWhite () {
+               document.body.style.backgroundColor = "#fff";
+          }
+
+          // Page 382
+          function changeColor(color) {
+               document.body.style.background = color;
+          }
+     </script>
+</head>
+<body>
+     <!--Page 380-->
+     <h1>Click a botton to change th Color</h1>
+     <form action="" >
+          <fieldset>
+               <input type="button" value="Blue" onclick="document.body.style.backgroundColor = 'blue' ">
+               <input type="button" value="Red" onclick="document.body.style.backgroundColor = 'red' ">
+               <input type="button" value="Yello" onclick="document.body.style.backgroundColor = '#fdff01' ">
+          </fieldset>
+     </form>
+<br>
+     <!--Page 381 along side the script above-->
+     <form action="">
+          <fieldset>
+               <input type="button" value="Black" onclick="makeBlack ()">
+               <input type="button" value="White" onclick="makeWhite ()">
+          </fieldset>
+     </form>
+<br>
+     <!--Page 382 along side the script above-->
+     <form action="">
+          <fieldset>
+               <input type="button" value="Grey" onclick="changeColor('grey')">
+               <input type="button" value="Purple" onclick="changeColor('purple')">
+          </fieldset>
+     </form>
+</body>
+</html>

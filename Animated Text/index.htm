@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Typing Text</title>
+</head>
+<body>
+     <div class="container">
+          <span class="text first-text">I'm a</span>
+          <span class="text sec-text"></span>
+     </div>
+
+     <script>
+          const text = document.querySelector('.sec-text');
+
+          const textLoad = () => {
+               setTimeout(() => {
+                    text.textContent = "FrontEnd Web Developer"
+               }, 0);
+               setTimeout(() => {
+                    text.textContent = "Graphics Designer"
+               }, 4000);
+               setTimeout(() => {
+                    text.textContent = "UI/UX Designer"
+               }, 8000);
+               setTimeout(() => {
+                    text.textContent = "Digital Marketer"
+               }, 10000); //1s = 1000 miliseconds
+          }
+
+          textLoad();
+          setInterval(textLoad, 12000);
+     </script>
+</body>
+</html>

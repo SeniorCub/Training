@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Using Alert Box</title>
+     <script type="text/javascript">
+          //Hello World page 358
+          alert("Hello World!");
+          
+          //from Prompt page 360
+          var person = "";
+          person = prompt("What is your name?");
+          alert ("Hi");
+          alert (person);
+          
+          //from contact page 363
+          alert ("Hi there, " + person + "!");
+          
+          //from name length page 366
+          var Person = prompt ("Please, enter your name.");
+          var length = Person.length;
+          alert ("Hi, " + Person + "!");
+          alert ("The name " + Person + " is " + length + " characters long");
+          
+          //from string method page 367
+          var text = prompt("Please, enter some text.");
+          alert("I will shout it out:");
+          alert(text.toUpperCase());
+
+          alert("Now in lowercase.");
+          alert(text.toLowerCase());
+
+          alert("The first 'a' is at letter");
+          alert(text.indexOf("a"));
+
+          alert("The first three letters are .");
+          alert(text.substring(0, 3));
+
+          //from addNumbers page 369
+          var x = 2;
+          var y = 3;
+          var sum = x + y;
+          alert(x + " Plus " + y + " equals " + sum);
+
+          //from add input page 373
+          var x = prompt("Input a number:");
+          var y = prompt("Input another number:");
+          var sum = parseFloat(x) + parseFloat(y);
+          alert(x + " Plus " + y + " equals " + sum);
+
+          //I discoered this myself
+          function hello() {
+               var Person = prompt ("Please, enter your name.");
+               alert ("Congratultions " + Person + "!");
+          }
+     </script>
+</head>
+<body>
+     <p>
+          We used alertn box so recived, send and calcuate inputs. <b>Alert box or Dialog Box</b> is a Javascript code that doesn't allow the user to interacte with the actual web page unless been answered or replied to.
+     </p>
+     <form action="" >
+          <fieldset>
+               <input type="email" name="email-me" id="">
+               <input type="button" value="Hello" onclick="hello()">
+          </fieldset>
+     </form>
+</body>
+</html>
