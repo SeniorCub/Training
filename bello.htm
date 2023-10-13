@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div {
+           width: 600px;
+           height: 400px;
+           background-color: yellow;
+           display: flex;
+           flex-direction: column;
+           gap: 20px ;
+           justify-content: center;
+           place-items: center;
+        }
+        h1 {
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            color: white;
+        }
+        h3 {
+            width: 300px;
+            height: 50px;
+            background-color: grey;
+            color: red;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            border: 2px dashed red;
+            border-radius: 20px;
+            font-size: larger;
+        }
+        button:hover {
+            font-weight: 900;
+            background-color: red;
+            color: white;
+            box-shadow: 5px 10px 10px black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1 class="name"></h1>
+        <h3 class="age"></h3>
+        <button class="but">Log In</button>
+    </div>
+
+    <script>
+        
+        let ame = document.querySelector('.name')
+        let age = document.querySelector('.age')
+        let btn = document.querySelector('.but')
+        btn.addEventListener('click',login)
+
+        function login() {
+            let namee = window.prompt("Enter UserName..")
+            ame.innerHTML= `Username: ${namee} `
+            let ge = window.prompt("Enter your Age..")
+            age.innerHTML= `I am ${ge} years old `
+        }
+    </script>
+</body>
+</html>
